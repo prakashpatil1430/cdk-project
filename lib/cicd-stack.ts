@@ -10,7 +10,7 @@ export class CicdStack extends cdk.Stack {
     new CodePipeline(this, "cidepipelineid", {
         pipelineName: "cidepipelineid",
         synth: new ShellStep('Synth', {
-            input: CodePipelineSource.gitHub('prakashpatil1430/cdk-project', 'cicd-practice'),
+            input: CodePipelineSource.gitHub('prakashpatil1430/cdk-project', 'stage'),
             commands:[
                 'npm ci',
                 'npx cdk synth'
@@ -18,7 +18,7 @@ export class CicdStack extends cdk.Stack {
         )
     });
 
-    
+
 
    
   }

@@ -18,3 +18,5 @@ new StorageStack(app, 'StorageStack');
 
 
 new CicdStack(app, 'CicdStack');
+
+app.synth();
